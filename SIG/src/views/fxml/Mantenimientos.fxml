@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="740.0" prefWidth="1080.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="pestanias" text="Recepción">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="allcolors">
+                     <children>
+                        <ToolBar prefHeight="40.0" prefWidth="1080.0" styleClass="toolbar">
+                          <items>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="13.0" prefWidth="83.0" text="Nuevo">
+                                 <styleClass>
+                                    <String fx:value="allcolors" />
+                                    <String fx:value="btntoolbar" />
+                                 </styleClass>
+                              </Button>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="10.0" prefWidth="96.0" text="Guardar">
+                                 <styleClass>
+                                    <String fx:value="allcolors" />
+                                    <String fx:value="btntoolbar" />
+                                 </styleClass>
+                              </Button>
+                          </items>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </ToolBar>
+                        <Label contentDisplay="CENTER" layoutX="463.0" layoutY="49.0" styleClass="titledat" text="Datos Generales" />
+                        <DatePicker layoutX="844.0" layoutY="99.0" />
+                        <Label layoutX="678.0" layoutY="104.0" text="Fecha Registro:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass></Label>
+                        <Label layoutX="47.0" layoutY="122.0" text="Empleado:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass></Label>
+                        <Label layoutX="29.0" layoutY="164.0" text="Tipo Cliente:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass></Label>
+                        <ComboBox layoutX="157.0" layoutY="114.0" prefHeight="26.0" prefWidth="340.0" />
+                        <ComboBox layoutX="160.0" layoutY="204.0" prefHeight="26.0" prefWidth="339.0" />
+                        <Label layoutX="21.0" layoutY="205.0" text="Cliente Fisico:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass></Label>
+                        <Label layoutX="572.0" layoutY="208.0" text="Cliente Moral:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass></Label>
+                        <ComboBox layoutX="703.0" layoutY="203.0" prefHeight="26.0" prefWidth="339.0" />
+                        <ToggleButton layoutX="155.0" layoutY="161.0" mnemonicParsing="false" text="ToggleButton">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ToggleButton>
+                        <Separator layoutX="-3.0" layoutY="308.0" prefHeight="0.0" prefWidth="1080.0" styleClass="separador" />
+                        <Label contentDisplay="CENTER" layoutX="447.0" layoutY="322.0" styleClass="titledat" text="Datos Equipos" />
+                        <Label layoutX="22.0" layoutY="369.0" text="Tipo:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="352.0" layoutY="371.0" text="Marca:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="721.0" layoutY="371.0" text="Modelo:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="22.0" layoutY="433.0" text="N°- Serie:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass>
+                        </Label>
+                        <ComboBox layoutX="82.0" layoutY="366.0" prefHeight="26.0" prefWidth="230.0" />
+                        <TextField layoutX="424.0" layoutY="369.0" prefHeight="25.0" prefWidth="226.0" />
+                        <TextField layoutX="804.0" layoutY="368.0" prefHeight="25.0" prefWidth="226.0" />
+                        <TextField layoutX="113.0" layoutY="431.0" prefHeight="25.0" prefWidth="293.0" />
+                        <Label layoutX="17.0" layoutY="487.0" text="Descripcion Equipo:">
+                           <styleClass>
+                              <String fx:value="allcolors" />
+                              <String fx:value="labels" />
+                           </styleClass>
+                        </Label>
+                        <TextArea layoutX="18.0" layoutY="511.0" prefHeight="181.0" prefWidth="625.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab styleClass="pestanias" text="Equipos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="allcolors">
+                     <children>
+                        <ToolBar prefHeight="40.0" prefWidth="1080.0" styleClass="toolbar">
+                           <items>
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Dar Mantenimiento" />
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Editar" />
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Eliminar" />
+                              <Label text="Buscar:">
+                                 <styleClass>
+                                    <String fx:value="labels" />
+                                    <String fx:value="btntoolbar" />
+                                 </styleClass>
+                              </Label>
+                              <TextField prefHeight="25.0" prefWidth="295.0" />
+                           </items>
+                        </ToolBar>
+                        <TableView layoutX="38.0" layoutY="66.0" prefHeight="510.0" prefWidth="957.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="Estatus" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab styleClass="pestanias" text="Mantenimiento">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1080.0" styleClass="allcolors">
+                     <children>
+                        <ToolBar layoutY="-6.0" prefHeight="40.0" prefWidth="1080.0" styleClass="toolbar">
+                          <items>
+                            <Button mnemonicParsing="false" styleClass="btntoolbar" text="Guardar" />
+                          </items>
+                        </ToolBar>
+                        <Label layoutX="39.0" layoutY="68.0" text="ID Equipo:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="140.0" layoutY="68.0" text="0000">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <DatePicker layoutX="841.0" layoutY="43.0" />
+                        <DatePicker disable="true" layoutX="841.0" layoutY="95.0" visible="false" />
+                        <Label layoutX="595.0" layoutY="46.0" text="Fecha Inicio Mantenimiento:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label disable="true" layoutX="614.0" layoutY="98.0" text="Fecha Fin Mantenimiento:" visible="false">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="205.0" layoutY="138.0" text="Datos Cliente">
+                           <styleClass>
+                              <String fx:value="titledat" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="206.0" text="ID Cliente:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="293.0" text="Nombre(s):">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <TextField disable="true" layoutX="191.0" layoutY="290.0" prefHeight="25.0" prefWidth="295.0" />
+                        <TextField disable="true" layoutX="191.0" layoutY="339.0" prefHeight="25.0" prefWidth="295.0" />
+                        <TextField disable="true" layoutX="191.0" layoutY="382.0" prefHeight="25.0" prefWidth="295.0" />
+                        <Label layoutX="36.0" layoutY="342.0" text="Apellido Paterno:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="385.0" text="Apellido Materno:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="579.0" layoutY="342.0" text="Apellido Materno:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="581.0" layoutY="293.0" text="Apellido Paterno:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <TextField disable="true" layoutX="739.0" layoutY="339.0" prefHeight="25.0" prefWidth="295.0" />
+                        <TextField disable="true" layoutX="739.0" layoutY="290.0" prefHeight="25.0" prefWidth="295.0" />
+                        <TextField disable="true" layoutX="740.0" layoutY="247.0" prefHeight="25.0" prefWidth="295.0" />
+                        <Label layoutX="627.0" layoutY="250.0" text="Nombre(s):">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <ComboBox layoutX="737.0" layoutY="205.0" prefHeight="25.0" prefWidth="298.0" />
+                        <Label layoutX="609.0" layoutY="207.0" text="ID Empleado:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="720.0" layoutY="138.0" text="Datos Recepcionista">
+                           <styleClass>
+                              <String fx:value="titledat" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="250.0" text="Razon Social:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <TextField disable="true" layoutX="191.0" layoutY="247.0" prefHeight="25.0" prefWidth="295.0" />
+                        <TextArea layoutX="187.0" layoutY="436.0" prefHeight="257.0" prefWidth="853.0" />
+                        <Label layoutX="36.0" layoutY="441.0" text="Descripcion Falla:">
+                           <styleClass>
+                              <String fx:value="labels" />
+                              <String fx:value="allcolors" />
+                           </styleClass>
+                        </Label>
+                        <TextField disable="true" layoutX="191.0" layoutY="204.0" prefHeight="25.0" prefWidth="295.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab styleClass="pestanias" text="Detalles Mantenimiento">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1080.0" styleClass="allcolors">
+                     <children>
+                        <ToolBar layoutY="-6.0" prefHeight="40.0" prefWidth="1080.0" styleClass="toolbar">
+                           <items>
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Solicitar Refacciones" />
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Agregar  Correpcion" />
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Editar" />
+                              <Button mnemonicParsing="false" styleClass="btntoolbar" text="Guardar Cambios" />
+                              <Label text="Buscar">
+                                 <styleClass>
+                                    <String fx:value="labels" />
+                                    <String fx:value="btntoolbar" />
+                                 </styleClass>
+                              </Label>
+                              <TextField prefHeight="25.0" prefWidth="346.0" />
+                           </items>
+                        </ToolBar>
+                        <TableView layoutX="25.0" layoutY="50.0" prefHeight="569.0" prefWidth="977.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="Estatus" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+@font-face {
+ -fx-font-family:"FontAwesome";
+  src: url('../fonts/fontawesome-webfont.ttf');
+}
+@font-face{
+	-fx-font-family:"Lato-Regular";
+	src:url("../fonts/Lato-Regular.ttf");
+}
+@font-face{
+	-fx-font-family:"Lato-Light";
+	src:url("../fonts/Lato-Light.ttf");
+}
+.allcolors{
+	-fx-background-color: #ffffff;
+	-fx-text-fill: #1E8BC3;
+}
+.titles{
+	-fx-font-family:"Lato-Regular";
+	-fx-font-size: 3em;
+	-fx-font-weight: bold;
+}
+.gdtitles{
+	-fx-font-size: 3em;
+	-fx-background-color: rgb(36,66,135);
+	-fx-text-fill: #ffffff;
+}
+.nav{
+	-fx-font-family:"Lato-Regular";
+	-fx-font-size: 12pt;
+	-fx-font-weight: bolder;
+}
+.pestanias{
+	-fx-font-family:"Lato-Regular";
+	-fx-font-size: 11pt;
+	-fx-font-weight: bolder;
+	-fx-background-color: #ffffff;
+}
+.btnsize{
+	-fx-font-family: "Lato-Light";
+	-fx-highlight-fill: 200px;
+	-fx-font-weight: bolder;
+	-fx-font-size: 11pt;
+}
+.toolbar{
+	-fx-background-color: #1E8BC3;
+}
+.btntoolbar{
+	-fx-font-family: "Lato-Light";
+	-fx-highlight-fill: 200px;
+	-fx-font-size: 10pt;
+	-fx-background-color:#1E8BC3;
+	-fx-text-fill: #ffffff;
+}
+.labels{
+	-fx-font-family:"Lato-Regular";
+	-fx-font-size: 12pt;
+}
+.titledat{
+	-fx-text-fill: #1E8BC3;
+	-fx-font-size: 2em;
+}
+.separador{
+	-fx-background-color:#1E8BC3;
+	-fx-background-size: 1px;
+}
+.icon{
+	-fx-font-family: "../fonts/fontawesome-webfont.ttf";
+	-fx-ellipsis-string:'\f005';
+}
