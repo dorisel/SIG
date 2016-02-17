@@ -6,14 +6,12 @@
 package views.controller;
 
 import java.util.HashMap;
-
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.beans.property.DoubleProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -56,7 +54,7 @@ public class ControllerWindows extends AnchorPane{
 	}
 	
 	//Descargamos la ventana cargada para cargar otra nueva
-	
+
 	public boolean download(String windowsoption){
 		if(Screens.remove(windowsoption)==null){
 			System.out.println("No exites la ventana");
