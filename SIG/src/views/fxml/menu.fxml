@@ -66,7 +66,7 @@
       </VBox>
    </left>
    <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane prefHeight="800.0" prefWidth="1038.0" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="1081.0" stylesheets="@../css/main.css" text="Bienvenido">
                <styleClass>
@@ -83,7 +83,4 @@
          </children>
       </Pane>
    </center>
-   <right>
-      <Pane prefHeight="800.0" prefWidth="237.0" BorderPane.alignment="CENTER" />
-   </right>
 </BorderPane>

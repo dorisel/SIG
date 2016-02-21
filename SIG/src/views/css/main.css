@@ -63,7 +63,4 @@
 	-fx-background-color:#1E8BC3;
 	-fx-background-size: 1px;
 }
-.icon{
-	-fx-font-family: "../fonts/fontawesome-webfont.ttf";
-	-fx-ellipsis-string:'\f005';
-}
+

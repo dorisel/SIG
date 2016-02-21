@@ -31,7 +31,7 @@ public class Main extends Application{
 		Scene scene= new Scene(root);
 		container.setCenter(myWindows);
 		root.getChildren().add(container);
-		
+		scene.getStylesheets().add(getClass().getResource("../views/css/main.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.centerOnScreen();
 		primaryStage.show();		
