@@ -21,10 +21,17 @@ import javafx.util.Duration;
 public class ControllerWindows extends AnchorPane{
 	//Esta linea crea como un interprete o diccionario
 	private HashMap<String, Node>Screens=new HashMap<>();
-	
+	private static ControllerWindows instancia;
 	//Contructor de la clase
-	public ControllerWindows(){
+	private ControllerWindows(){
 		super();
+	}
+	
+	public static ControllerWindows getInstancia(){
+		if(instancia==null){
+			instancia= new ControllerWindows();
+		}
+		return instancia;
 	}
 	
 	//Agregamos la ventana al diccionario
@@ -67,13 +74,15 @@ public class ControllerWindows extends AnchorPane{
 	//Aqui activamos la vista de la interfaz
 	public boolean showScreen(final String windowsoption)
 	{
+		System.out.println(windowsoption);
 		System.out.println(Screens.get(windowsoption)+ "===");
 		if(Screens.get(windowsoption)!=null)
 		{
 			final DoubleProperty opacity = opacityProperty();
-			System.out.println("ingreso");
+		
 			if(!getChildren().isEmpty())
 			{
+				System.out.println("ingreso");
 			Timeline time=new Timeline(
 					new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
 					new KeyFrame(new Duration(1000), new EventHandler<ActionEvent>(){

@@ -14,7 +14,7 @@ import views.controller.ControllerWindows;
 public class Main extends Application{
 	
 	@FXML private Button btnMantenimientos;
-	ControllerWindows myWindows=new ControllerWindows();
+	ControllerWindows myWindows=ControllerWindows.getInstancia();
 	BorderPane container=null;
 	public static String screenSupports="Mantenimientos";
 	public static String fileSupports="../fxml/Mantenimientos.fxml";
@@ -24,19 +24,21 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception{
 		
 		myWindows.loadScreen(Main.screenSupports, Main.fileSupports);
-		
 		java.net.URL location = getClass().getResource("../views/fxml/menu.fxml");
 		FXMLLoader fxml = new FXMLLoader(location);
 		container = (BorderPane) fxml.load();
+		//fxml.getController();
 		Scene scene= new Scene(root);
 		container.setCenter(myWindows);
 		root.getChildren().add(container);
+		
 		primaryStage.setScene(scene);
 		primaryStage.centerOnScreen();
 		primaryStage.show();		
 	}
 
 	@FXML private void supports(){
+		System.out.println(Main.screenSupports);
 		myWindows.showScreen(Main.screenSupports);
 	}
 	
