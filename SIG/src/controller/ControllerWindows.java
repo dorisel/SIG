@@ -3,7 +3,7 @@
  * de transición*/
 //Developer:Lozano Ventura Jesus Alberto <0Line/>
 //UTCV TICSI 5"A" Equipo:3
-package views.controller;
+package controller;
 
 import java.util.HashMap;
 import javafx.animation.KeyFrame;
@@ -85,7 +85,7 @@ public class ControllerWindows extends AnchorPane{
 				System.out.println("ingreso");
 			Timeline time=new Timeline(
 					new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
-					new KeyFrame(new Duration(1000), new EventHandler<ActionEvent>(){
+					new KeyFrame(new Duration(500), new EventHandler<ActionEvent>(){
 						
 						public void handle(ActionEvent event)
 						{
@@ -93,7 +93,7 @@ public class ControllerWindows extends AnchorPane{
 							getChildren().add(0, Screens.get(windowsoption));
 							Timeline input= new Timeline(
 									new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-									new KeyFrame(new Duration(800), new KeyValue(opacity, 1.0)));
+									new KeyFrame(new Duration(600), new KeyValue(opacity, 1.0)));
 							input.play();
 						}	
 					}, new KeyValue(opacity, 0.0)));

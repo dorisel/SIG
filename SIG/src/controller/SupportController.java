@@ -1,4 +1,4 @@
-package views.controller;
+package controller;
 
 public class SupportController {
 

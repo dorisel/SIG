@@ -9,21 +9,25 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import views.controller.ControllerWindows;
 
 public class Main extends Application{
 	
-	@FXML private Button btnMantenimientos;
 	ControllerWindows myWindows=ControllerWindows.getInstancia();
 	BorderPane container=null;
 	public static String screenSupports="Mantenimientos";
-	public static String fileSupports="../fxml/Mantenimientos.fxml";
+	public static String fileSupports="../views/fxml/Mantenimientos.fxml";
+	public static String screenLogin="Login";
+	public static String fileLogin="../views/fxml/login.fxml";
+	public static String screenWelcome="Bienvenido";
+	public static String fileWelcome="../views/fxml/welcome.fxml";
 	Group root= new Group();
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		
 		myWindows.loadScreen(Main.screenSupports, Main.fileSupports);
+		myWindows.loadScreen(Main.screenLogin, Main.fileLogin);
+		myWindows.loadScreen(Main.screenWelcome, Main.fileWelcome);
 		java.net.URL location = getClass().getResource("../views/fxml/menu.fxml");
 		FXMLLoader fxml = new FXMLLoader(location);
 		container = (BorderPane) fxml.load();
@@ -35,11 +39,6 @@ public class Main extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.centerOnScreen();
 		primaryStage.show();		
-	}
-
-	@FXML private void supports(){
-		System.out.println(Main.screenSupports);
-		myWindows.showScreen(Main.screenSupports);
 	}
 	
 	public static void main(String[] args) {
