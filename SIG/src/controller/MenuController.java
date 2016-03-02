@@ -52,7 +52,7 @@ public class MenuController implements Initializable,IControllerWindows{
 	
 	public void activeMenu(String nivel){
 		if(nivel=="admin"){
-			supports();
+			admin();
 		}
 	}
 }
