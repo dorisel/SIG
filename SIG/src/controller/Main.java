@@ -20,11 +20,9 @@ public class Main extends Application{
 	public static String fileLogin="../views/fxml/login.fxml";
 	public static String screenWelcome="Bienvenido";
 	public static String fileWelcome="../views/fxml/welcome.fxml";
-	Group root= new Group();
-	
+	Group root= new Group();	
 	@Override
 	public void start(Stage primaryStage) throws Exception{
-		
 		myWindows.loadScreen(Main.screenSupports, Main.fileSupports);
 		myWindows.loadScreen(Main.screenLogin, Main.fileLogin);
 		myWindows.loadScreen(Main.screenWelcome, Main.fileWelcome);

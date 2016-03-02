@@ -18,7 +18,7 @@
                         <String fx:value="titles" />
                      </styleClass>
                   </Label>
-                  <Button fx:id="btnClientes" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Clientes" textAlignment="CENTER">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Clientes" textAlignment="CENTER">
                      <styleClass>
                         <String fx:value="allcolors" />
                         <String fx:value="nav" />

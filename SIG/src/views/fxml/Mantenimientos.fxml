@@ -127,24 +127,7 @@
                               <TextField prefHeight="25.0" prefWidth="295.0" />
                            </items>
                         </ToolBar>
-                        <TableView layoutX="38.0" layoutY="66.0" prefHeight="510.0" prefWidth="957.0">
-                           <columns>
-                              <TableColumn prefWidth="75.0" text="C1" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="C2" />
-                              <TableColumn prefWidth="75.0" text="Estatus" />
-                           </columns>
-                        </TableView>
+                        <TableView fx:id="tvEquipos" layoutX="38.0" layoutY="66.0" prefHeight="510.0" prefWidth="957.0" />
                      </children>
                   </AnchorPane>
             </content>
