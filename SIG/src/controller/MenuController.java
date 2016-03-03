@@ -46,10 +46,15 @@ public class MenuController implements Initializable,IControllerWindows{
 	
 	@FXML private void supports(){
 		myWindows.showScreen(Main.screenSupports);
-		btnClientes.setVisible(false);
+	
 	}
-	
-	
+	@FXML private void Empleados(){
+		myWindows.showScreen(Main.screenEmpleados);
+			}
+	@FXML private void usuario(){
+		myWindows.showScreen(Main.screenusuario);
+		
+	}
 	public void activeMenu(String nivel){
 		if(nivel=="admin"){
 			admin();

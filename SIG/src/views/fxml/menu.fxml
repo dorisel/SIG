@@ -30,13 +30,13 @@
                         <String fx:value="nav" />
                      </styleClass>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" disable="true" mnemonicParsing="false" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Empleados">
+                  <Button fx:id="btnEmpleados" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Empleados" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Empleados">
                      <styleClass>
                         <String fx:value="allcolors" />
                         <String fx:value="nav" />
                      </styleClass>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" disable="true" mnemonicParsing="false" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Usuarios">
+                  <Button fx:id="btnusuario" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#usuario" prefHeight="75.0" prefWidth="400.0" stylesheets="@../css/main.css" text=" Usuarios">
                      <styleClass>
                         <String fx:value="allcolors" />
                         <String fx:value="nav" />
