@@ -13,23 +13,23 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="756.0">
                      <children>
-                        <Label fx:id="lblEmpleado" layoutX="34.0" layoutY="31.0" text="Empleadoid" textFill="#14c6d7" />
-                        <Label fx:id="lbllNombre" layoutX="39.0" layoutY="77.0" prefHeight="17.0" prefWidth="53.0" text="Nombre" textFill="#10c4e4" />
-                        <Label fx:id="lblApellidoP" layoutX="21.0" layoutY="127.0" text="Apellido Paterno" textFill="#0bbeda" />
-                        <Label fx:id="lblApellidoM" layoutX="19.0" layoutY="184.0" text="Apellido Materno" textFill="#0abdee" />
-                        <Label fx:id="Direccion" layoutX="342.0" layoutY="127.0" text="Direccion" textFill="#07f8f0" />
-                        <Label fx:id="lblCiudad" layoutX="26.0" layoutY="298.0" text="Ciudad" textFill="#0eeedf" />
-                        <Label fx:id="lblTelefono" layoutX="21.0" layoutY="243.0" text="Telefono" textFill="#10fcf4" />
-                        <Label fx:id="lblPais" layoutX="29.0" layoutY="401.0" text="Pais" textFill="#0cdceb" />
-                        <Label fx:id="lblEstado" layoutX="27.0" layoutY="347.0" text="Estado" textFill="#07d1f5" />
+                        <Label fx:id="lblEmpleado" layoutX="34.0" layoutY="31.0" text="Empleadoid" textFill="#0a1011" />
+                        <Label fx:id="lbllNombre" layoutX="39.0" layoutY="77.0" prefHeight="17.0" prefWidth="53.0" text="Nombre" textFill="#13282c" />
+                        <Label fx:id="lblApellidoP" layoutX="21.0" layoutY="127.0" text="Apellido Paterno" textFill="#0a191b" />
+                        <Label fx:id="lblApellidoM" layoutX="19.0" layoutY="184.0" text="Apellido Materno" textFill="#10262c" />
+                        <Label fx:id="Direccion" layoutX="342.0" layoutY="127.0" text="Direccion" textFill="#0a1717" />
+                        <Label fx:id="lblCiudad" layoutX="26.0" layoutY="298.0" text="Ciudad" textFill="#091716" />
+                        <Label fx:id="lblTelefono" layoutX="21.0" layoutY="243.0" text="Telefono" textFill="#122827" />
+                        <Label fx:id="lblPais" layoutX="29.0" layoutY="401.0" text="Pais" textFill="#092022" />
+                        <Label fx:id="lblEstado" layoutX="27.0" layoutY="347.0" text="Estado" textFill="#0e1f22" />
                         <TextField fx:id="txtEmpleado" layoutX="137.0" layoutY="27.0" />
                         <ImageView fitHeight="215.0" fitWidth="207.0" layoutX="412.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/Empleados.png" />
                            </image>
                         </ImageView>
-                        <Label fx:id="lblCorreo" layoutX="348.0" layoutY="31.0" text="Correo" textFill="#06d2e4" />
-                        <Label fx:id="lblStatus" layoutX="350.0" layoutY="77.0" text="Status" textFill="#07eeff" />
+                        <Label fx:id="lblCorreo" layoutX="348.0" layoutY="31.0" text="Correo" textFill="#163a3c" />
+                        <Label fx:id="lblStatus" layoutX="350.0" layoutY="77.0" text="Status" textFill="#132122" />
                         <TextField fx:id="txtNombre" layoutX="137.0" layoutY="73.0" />
                         <TextField fx:id="txtApellidoP" layoutX="137.0" layoutY="123.0" />
                         <TextField fx:id="txtApellidoM" layoutX="137.0" layoutY="180.0" />
